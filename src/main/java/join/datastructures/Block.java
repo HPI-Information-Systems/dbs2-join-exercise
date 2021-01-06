@@ -34,7 +34,7 @@ public final class Block implements Iterable<Tuple> {
 	}
 
 	public boolean addTuple(Tuple tuple) {
-		Objects.requireNonNull(gate, "tuple must not be null");
+		Objects.requireNonNull(tuple, "tuple must not be null");
 
 		checkAccess("cannot write to unpinned block");
 
